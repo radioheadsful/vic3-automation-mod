@@ -1,13 +1,17 @@
-pm_road_carts_transportation_industry = {
+﻿#
+# Automation logic
+# 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 1 Transportation / 0.5 Electricity / 0.5 Oil
+#
+pm_road_carts_transportation_farms = {
 	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
 	is_default = yes
 }
 
-pm_rail_transport_transportation_industry = {
+pm_rail_transport_transportation_farms = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 15
+			state_pollution_generation_add = 10
 		}
 	}
 	unlocking_technologies = {
@@ -23,8 +27,8 @@ pm_rail_transport_transportation_industry = {
 	}
 }
 
-pm_rail_cars_transportation_industry = {
-	texture = "gfx/interface/icons/production_method_icons/log_carts.dds"
+pm_rail_cars_transportation_farms = {
+	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15

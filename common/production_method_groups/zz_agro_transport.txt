@@ -1,0 +1,9 @@
+pmg_transportation_farms = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_road_carts_transportation_farms
+		pm_rail_transport_transportation_farms
+		pm_rail_cars_transportation_farms
+	}
+}
