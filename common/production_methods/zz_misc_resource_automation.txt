@@ -1,0 +1,151 @@
+﻿#
+# Automation logic
+# 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 5 Transportation / 0.5 Electricity / 0.5 Oil
+#
+pm_steam_donkey_building_logging_camp = {
+	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
+	unlocking_technologies = {
+		steam_donkey
+	}
+	disallowing_laws = {
+		law_industry_banned
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 0.5
+			goods_input_coal_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
+
+pm_chainsaws = {
+	texture = "gfx/interface/icons/production_method_icons/chainsaws.dds"
+	unlocking_technologies = {
+		combustion_engine
+	}
+	disallowing_laws = {
+		law_industry_banned
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 0.5
+			goods_input_oil_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1500
+		}
+	}
+}
+
+pm_refrigerated_storage_building_fishing_wharf = {
+	texture = "gfx/interface/icons/production_method_icons/refrigerated_storage.dds"
+	unlocking_technologies = {
+		pasteurization
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+	required_input_goods = electricity
+}
+
+pm_refrigerated_rail_cars_building_fishing_wharf = {
+	texture = "gfx/interface/icons/production_method_icons/refrigerated_rail_cars.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+	unlocking_technologies = {
+		electric_railway
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 0.5
+			goods_input_transportation_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+	required_input_goods = electricity
+}
+
+pm_flash_freezing_building_fishing_wharf = {
+	texture = "gfx/interface/icons/production_method_icons/flash_refrigerated.dds"
+	unlocking_technologies = {
+		flash_freezing
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 1
+			goods_input_transportation_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -3000
+		}
+	}
+	required_input_goods = electricity
+}
+
+pm_refrigerated_storage_building_whaling_station = {
+	texture = "gfx/interface/icons/production_method_icons/refrigerated_storage.dds"
+	unlocking_technologies = {
+		pasteurization
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+	required_input_goods = electricity
+}
+
+pm_refrigerated_rail_cars_building_whaling_station = {
+	texture = "gfx/interface/icons/production_method_icons/refrigerated_rail_cars.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+	unlocking_technologies = {
+		electric_railway
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 0.5
+			goods_input_transportation_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+	required_input_goods = electricity
+}
+
+pm_flash_freezing_building_whaling_station = {
+	texture = "gfx/interface/icons/production_method_icons/flash_refrigerated.dds"
+	unlocking_technologies = {
+		flash_freezing
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 1
+			goods_input_transportation_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -3000
+		}
+	}
+	required_input_goods = electricity
+}

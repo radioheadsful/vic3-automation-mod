@@ -1,0 +1,29 @@
+﻿pmg_automation_building_chemical_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_automation_disabled
+		pm_rotary_valve_engine
+		pm_assembly_lines
+	}
+}
+
+pmg_automation_building_shipyards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler
+		pm_rotary_valve_engine
+		pm_assembly_lines
+	}
+}
+
+pmg_automation_building_electrics_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_automation_disabled
+		pm_assembly_lines
+	}
+}

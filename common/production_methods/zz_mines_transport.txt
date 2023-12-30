@@ -1,0 +1,24 @@
+﻿#
+# Automation logic
+# 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 5 Transportation / 0.5 Electricity / 0.5 Oil
+#
+
+pm_rail_transport_mine = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		railways
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_transportation_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}

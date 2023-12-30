@@ -1,0 +1,178 @@
+﻿#
+# Automation logic
+# 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 1 Transportation / 0.5 Electricity / 0.5 Oil
+#
+pm_tools = {
+	texture = "gfx/interface/icons/production_method_icons/harvesting_tools.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -500
+		}
+	}
+}
+
+pm_steam_threshers = {
+	texture = "gfx/interface/icons/production_method_icons/steam_powered_threshers.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		threshing_machine
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 0.5
+			goods_input_coal_add = 1
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1500
+		}
+	}
+}
+
+pm_tractors = {
+	texture = "gfx/interface/icons/production_method_icons/tractors.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+	unlocking_technologies = {
+		mechanized_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 1
+			goods_input_coal_add = 1
+		}
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+}
+
+pm_compression_ignition_tractors = {
+	texture = "gfx/interface/icons/production_method_icons/tractors.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+	unlocking_technologies = {
+		compression_ignition
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 1
+			goods_input_oil_add = 1
+		}
+		level_scaled = {
+			building_employment_laborers_add = -3000
+		}
+	}
+}
+
+pm_tools_building_rice_farm = {
+	texture = "gfx/interface/icons/production_method_icons/harvesting_tools.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 1
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
+
+pm_steam_threshers_building_rice_farm = {
+	texture = "gfx/interface/icons/production_method_icons/steam_powered_threshers.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		threshing_machine
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods													
+			goods_input_tools_add = 1
+			goods_input_coal_add = 2
+		}
+		level_scaled = {
+			building_employment_laborers_add = -3000
+		}
+	}
+}
+
+pm_barbed_wire_fences = {
+	texture = "gfx/interface/icons/production_method_icons/barbed_wire_fencing.dds"
+	unlocking_technologies = {
+		trench_works
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_iron_add = 1
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
+
+pm_electric_fencing = {
+	texture = "gfx/interface/icons/production_method_icons/electric_fencing.dds"
+	unlocking_technologies = {
+		electrical_generation
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_iron_add = 1
+			goods_input_electricity_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+	required_input_goods = electricity
+}
+
+pm_refrigerated_storage_building_livestock_ranch = {
+	texture = "gfx/interface/icons/production_method_icons/refrigerated_storage.dds"
+	unlocking_technologies = {
+		pasteurization
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+	required_input_goods = electricity
+}
+
+pm_refrigerated_rail_cars_building_livestock_ranch = {
+	texture = "gfx/interface/icons/production_method_icons/refrigerated_rail_cars.dds"
+	unlocking_technologies = {
+		flash_freezing
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 0.5
+			goods_input_transportation_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+	required_input_goods = electricity
+}

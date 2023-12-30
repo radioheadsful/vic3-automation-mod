@@ -1,0 +1,51 @@
+﻿#
+# Automation logic
+# 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 1 Transportation / 0.5 Electricity / 0.5 Oil
+#
+pm_steam_donkey_building_coal_mine = {
+	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
+	unlocking_technologies = {
+		steam_donkey
+	}
+	disallowing_laws = {
+		law_industry_banned
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 0.5
+			goods_output_coal_add = -0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
+
+pm_steam_donkey_mine = {
+	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+	unlocking_technologies = {
+		steam_donkey
+	}
+	disallowing_laws = {
+		law_industry_banned
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_engines_add = 0.5
+			goods_input_coal_add = 0.5
+		}
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
