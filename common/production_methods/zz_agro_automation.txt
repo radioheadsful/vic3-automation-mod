@@ -1,6 +1,6 @@
 ﻿#
 # Automation logic
-# 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 1 Transportation / 0.5 Electricity / 0.5 Oil
+# 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 5 Transportation / 0.5 Electricity / 0.5 Oil
 #
 pm_tools = {
 	texture = "gfx/interface/icons/production_method_icons/harvesting_tools.dds"

@@ -2,7 +2,6 @@
 # Automation logic
 # 1K Labourers = 1 Coal / 1 Iron / 1 Tool / 1 Engine / 5 Transportation / 0.5 Electricity / 0.5 Oil
 #
-
 pm_rail_transport_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
 	state_modifiers = {

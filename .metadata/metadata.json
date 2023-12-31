@@ -3,8 +3,8 @@
   "id" : "",
   "version" : "1.0.0",
   "supported_game_version" : "1.5.12",
-  "short_description" : "",
-  "tags" : [],
+  "short_description" : "Makes automation & transportation production methods profitable and extends them to a few additional buildings",
+  "tags" : ["gameplay", "balance", "economy"],
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true
